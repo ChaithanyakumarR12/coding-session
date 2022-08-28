@@ -1,4 +1,4 @@
-//1 calculator
+//1 calculator 
 const Calculator = (A, B, C) => 
 {
 	switch(A)
@@ -124,5 +124,4 @@ const Triangle_Check = (A,B,C) => {
   else {
         return "acute"
   }      
-
 };
