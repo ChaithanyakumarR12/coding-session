@@ -1,0 +1,100 @@
+1.Find the number of digits
+const Find_Digits = (N) => 
+{
+	let count=0;
+	 while (N != 0)
+    {
+        N =Math.floor(N / 10);
+        ++count;
+    }
+    return(count);
+};
+2.find the fives
+const Find_Five = (N) => 
+{ let a=5;
+  var c=0;
+	for(let i=0;i<N.length;i++) 
+	 { if (N[i]==a)
+    {
+        c++;
+        }
+    }
+    console.log;
+};
+3.Find Sum
+const findSum = (n) => {
+     let sum = 0;
+        for (let i = 1; i <= n; i++) 
+        {
+          if(i%2==0)
+          sum=sum+i;
+        }
+   
+        return (sum);
+};
+4.Find the sum of the digits of a given number
+const Number_Sum = (N) => 
+{
+  let sum=0;
+	while (N) {
+    sum += N % 10;
+    N = Math.floor(N / 10);
+}
+return(sum);
+};
+5.print odds
+const Print_Odd = (N) => 
+{
+  console.log(2);
+    for (let i = 2; i <= N; i++)
+    {
+        if (i % 2 != 0) 
+        {
+            console.log(i);
+        }
+    }
+	 
+};
+6.print the pattern
+const Print_pattern = (N) => 
+{
+let string = "";
+for (let i = 1; i <= N; i++) {
+  for (let j = 0; j < i; j++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
+
+};
+7.check prime or not
+const Prime_Check = (N) => 
+{let i=N-1,p=0;
+	 while(i!=1)
+	 {
+	   if(N%i==0)
+	   {p=1;
+	     break;
+	   }
+	   i--;
+	 }
+	 if(p===0)
+	 return "YES"
+	 else
+	 return "NO"
+};
+8.print the numbers
+const printNumbers = (n) => {
+   for(let i=1;i<=n;i++)
+   console.log(i)
+};
+9.print table
+const Print_Table = (N) => 
+{
+	for(let i=1;i<=10;i++)
+	{
+	  let a=i*N;
+	  console.log(N+" * "+i+" = "+a)
+	}
+};
