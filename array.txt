@@ -1,0 +1,125 @@
+1.find product
+const Find_Prod = (array, N) => 
+{
+  let result = 1;
+        for (let i = 0; i < N; i++)
+            result = result * array[i];
+        return result;
+ 
+     
+
+};
+2.find sum
+
+const Find_Sum = (array, N) => 
+{
+  let sum=0;
+for (let i = 0; i < N; i++)  
+            sum += array[i];  
+  
+        return sum;
+};
+3.count occurences 
+
+const findCount = (N, K, Arr) => 
+{
+  let count = 0;
+  for(let i = 0; i < N; i++)
+  {
+    if(Arr[i] == K)
+    {
+      count++;
+    }
+  }
+  return count;
+};
+ 4.even odd
+ 
+const findEvenOdd = (N, Arr) => 
+{
+  let A = [];
+  let Even = 0 , Odd = 0;
+  for(let i = 0; i < N; i++)
+  {
+    if(Arr[i]%2 === 0)
+    {
+      Even += Arr[i];
+    }
+    else{
+     Odd += Arr[i];
+    }
+  }
+  A.push(Even);
+  A.push(Odd);
+  return A;
+};
+ 
+5. find the number is present or not
+
+
+const Find_Num = (array,N,M) => 
+{
+ for (let i = 0; i < N; i++)
+ {
+    if(array[i] = M)
+    {
+      return "YES";
+      
+    }
+    else{
+      return "NO";
+    }
+  }
+};
+ 
+6.higher age
+
+const highAge = (N, Arr) => 
+{
+    let array = [];
+  for(let i = 0; i < N; i++){
+    if(Arr[i] >= 18){
+      array.push(Arr[i]);
+    }
+  }
+  return array;
+};
+ 7. increment the array elements
+ 
+const Inc_Arr = (array,N) => 
+{
+  let x = true;
+  for(let i = 0; i < N; i++)
+  {
+    if(array[i] < 32)
+    {
+      x = false;
+      break;
+    }
+    else{
+      x = true;
+    }
+  }
+  if(x === true){
+    return "YES";
+  }
+  else{
+    return "NO";
+  }
+};
+ 8.pass
+ 
+const isAllPass = (N, Arr) => 
+{
+  for(let i=0;i<N;i++)
+  {
+    if(Arr[i]<32)
+    return "NO";
+  }
+    return "YES";
+};
+ 
+
+
+
+ 
